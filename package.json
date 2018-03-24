@@ -1,0 +1,32 @@
+{
+  "name": "ad2c",
+  "version": "1.0.0",
+  "description": "Site A2Dc  imprimerie serigraphie Langon",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Fisherman33/Ad2c.git"
+  },
+  "keywords": [
+    "\"Ad2C\""
+  ],
+  "author": "Kévin Videau",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Fisherman33/Ad2c/issues"
+  },
+  "homepage": "https://github.com/Fisherman33/Ad2c#readme",
+  "dependencies": {
+    "@uirouter/angularjs": "^1.0.15",
+    "angular": "^1.6.9",
+    "angular-resource": "^1.6.9",
+    "body-parser": "^1.18.2",
+    "colors": "^1.2.1",
+    "express": "^4.16.3",
+    "materialize-css": "^0.100.2"
+  }
+}

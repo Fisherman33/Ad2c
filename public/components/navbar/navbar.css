@@ -1,0 +1,230 @@
+
+.Logo {
+  width: 220px;
+  margin: 0px;
+  padding: 0px;
+}
+.LogoM {
+  width: 120px;
+  margin: 0px;
+  padding: 0px;
+}
+nav {
+  height: 42px;
+}
+
+.imprim, .graph,.text,.sig,.contac, .accueil {
+	position: relative;
+	font-size: 18px;
+	text-align: center;
+}
+.accueil_2 {
+  position: relative;
+	font-size: 16px;
+	text-align: center;
+  height: 50px;
+}
+
+.menu {
+  line-height: 35px;
+}
+
+.nav-wapper {
+  margin: 0px;
+}
+.nav_fixe {
+  height: 30px;
+  background:rgba(0, 0, 0, 1);
+}
+.menufixe {
+  height: 30px;
+  margin: 0px;
+}
+.menufixetext {
+  height: 30px;
+  font-size: 17px;
+  line-height: 30px;
+}
+
+.imprim:after, .graph:after,.text:after,.sig:after,.contac:after, .accueil:after {
+	content: '';
+	display: block;
+	margin: auto;
+	height: 4px;
+	width: 0px;
+	background: transparent;
+	transition: width .3s ease-in-out, background-color .3s ease;
+   border-radius: 5px;
+}
+:focus::after {
+  width: 100%;
+	background:grey;
+}
+.accueil:hover:after {
+	width: 100%;
+	background: #4A81EA;
+
+}
+
+.imprim:hover:after  {
+	width: 100%;
+	background: #E7007C;
+
+}
+.graph:hover:after {
+	width: 100%;
+	background: #F0C907;
+}
+.text:hover:after {
+	width: 100%;
+	background: #E7007C;
+}
+.sig:hover:after {
+	width: 100%;
+	background:#4A81EA ;
+}
+.contac:hover:after {
+	width: 100%;
+	background: #F0FF00;
+}
+
+#gradient
+{
+  width: 100%;
+  height:  5px;
+  padding: 0px;
+  margin: 0px;
+  border-radius: 5px;
+}
+#gradient1
+{
+  width: 100%;
+  height: 5px;
+  padding: 0px;
+  margin: 0px;
+  border-radius: 5px; 
+}
+#gradient2
+{
+  width: 100%;
+  height: 4px;
+  padding: 0px;
+  border-radius: 5px;
+}
+hr { 
+	border : 0;
+	height: 4px; 
+	background-image: linear-gradient(to right,#4A81EA, #E7007C, #F0FF00);
+  }
+/*option boutton scroll*/
+.cRetour {
+  border-radius:3px;
+  padding:10px;
+  font-size:15px;
+  text-align: center;
+  color:rgba(0, 0, 0, 0.25);
+  background: #fff;
+  z-index:99999;
+  transition: all ease-in 0.2s;
+  position: fixed;
+  cursor: pointer;
+  bottom: 5em;
+  right: 10px;
+  display: none;
+}
+/*boutton hover scroll top*/
+.cRetour:hover{
+  background:whitesmoke;
+  transition:all ease-in 0.2s;
+}
+
+/* cRetour1 = menu fixe option*/
+.cRetour1 {
+  border-radius:3px;
+  width: 98.1%;
+  height: 0.5%;
+  z-index: 9999;
+  transition: all ease-in 0.2s;
+  position: fixed;
+  cursor: pointer;
+  display: none;
+  opacity: 0.9;
+  top: 0.05%;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+   z-index: 2;
+   border-radius: 9px;
+}
+
+ul ul {
+  opacity: 0;
+  position: absolute;
+  top: 160%;
+  visibility: hidden;
+  transition: all .4s ease;
+  -webkit-transition: all .4s ease;
+   z-index: 2;
+      border-radius: 9px;
+}
+
+ul ul ul {
+  top: 0%;
+  left: 160%;
+   z-index: 2;
+   border-radius: 5px;
+}
+
+ul ul li:hover > ul {
+  top: 0%;
+  left: 100%;
+  opacity: 1;
+  visibility: visible;
+   z-index: 3;
+}
+
+ul li:hover > ul {
+  opacity: 1;
+  top: 100%;
+  visibility: visible;
+   z-index: 3;
+}
+
+ul li {
+  float: left;
+  position: relative;
+ 
+}
+
+ul ul li { float: none; width: 235px; }
+
+ul li {
+  background-color: black;
+  cursor: pointer;
+   z-index: 9999;
+}
+
+ul a {
+  text-decoration: none;
+  display: block;
+  color: white;
+  padding: 0px 0px;
+  text-align: center;
+  text-shadow: 0px -1px 0px rgba(0,0,0,.2);
+   z-index: 9999;
+   border-radius: 9px;
+}
+
+ul li a:hover { background-color: whitesmoke;  color:black !important;  border-radius: 9px; z-index: 4;  }
+
+ li a:hover { background-color: blue;  border-radius: 9px; z-index: 5; }
+
+.head_box {
+  /*border-bottom: 2px solid grey;*/
+  /*margin-bottom: 5px;*/
+  height: 90px;
+}
+

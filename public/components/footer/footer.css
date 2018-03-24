@@ -1,0 +1,29 @@
+.footerlien {
+	text-align: center;
+}
+.lien {
+
+	font-size: 14.5px;
+}
+
+.phone {
+    color: #E7007C;
+}
+.email {
+    color: #F0FF00;
+}
+.loc {
+    color:#4A81EA;
+}
+#logofooter {
+    width: 100%;
+      transform: rotate(-5deg);
+}
+.footer {
+    text-align: center;
+    background-color: black;
+}
+.footer-copyright {
+    
+    background-color: black;
+}
