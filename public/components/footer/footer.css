@@ -1,9 +1,12 @@
 .footerlien {
 	text-align: center;
 }
+.footer-contact {
+    font-size: 20px;
+}
 .lien {
 
-	font-size: 14.5px;
+	font-size: 11.5px;
 }
 
 .phone {
@@ -16,7 +19,7 @@
     color:#4A81EA;
 }
 #logofooter {
-    width: 100%;
+    width: 70%;
       transform: rotate(-5deg);
 }
 .footer {
@@ -27,3 +30,4 @@
     
     background-color: black;
 }
+

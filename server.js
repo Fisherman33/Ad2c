@@ -23,7 +23,7 @@ app.get('/myRoute/:myParam', function(req, res) {
 
 let server = app.listen(8080, '127.0.0.1', function() {
     let serverInfo = server.address();
-    console.log(('\n\tServer Jump on the Donzo-Mobile on http://' + serverInfo.address + ':' + serverInfo.port));
-    console.log('The Donzo-Mobile ROLL!'.america);
+    console.log(('\n\t Server takes a Jet-Express on http://' + serverInfo.address + ':' + serverInfo.port));
+    console.log('The Jet-Express flight like an Eagle!'.rainbow);
     // We use .color after a string for a max of debugging style
 });
