@@ -9,7 +9,19 @@ angular.module('ad2c')
 
 function Home($scope) {
     // Controller
+    $scope.getSwitchValue = function () {
+        // alert(angular.element('#my-switch').prop('checked'));
+        console.log(angular.element('#my-switch').prop('checked'));
+        console.log(angular.element('#my-switch1').prop('checked'));
+        console.log(angular.element('#amounted').prop('number'));
+    };
+    document.getElementsByName("format");
+    // $scope.format = function () {
+      
 
+
+    // } ;
+    
     // $('.carousel').carousel({
     //     fullWidth: true,
     //     padding: 0,
@@ -23,23 +35,27 @@ function Home($scope) {
     //      interval: 3000,
     //      transition: 700,
     //  });
-   $('.carousel.carousel-slider').carousel({
-       fullWidth: true,
-       indicators: true,
-   });
-     $('.modal').modal({
-      dismissible: true, // Modal can be dismissed by clicking outside of the modal
-      opacity: .5, // Opacity of modal background
-      inDuration: 300, // Transition in duration
-      outDuration: 200, // Transition out duration
-      startingTop: '4%', // Starting top style attribute
-      endingTop: '10%', // Ending top style attribute
-      ready: function(modal, trigger) { // Callback for Modal open. Modal and trigger parameters available.
-      },
-      complete: function() {  } // Callback for Modal close
+    $('.carousel.carousel-slider').carousel({
+        fullWidth: true,
+        indicators: true,
+    });
+    $('.modal').modal({
+        dismissible: true, // Modal can be dismissed by clicking outside of the modal
+        opacity: .5, // Opacity of modal background
+        inDuration: 300, // Transition in duration
+        outDuration: 200, // Transition out duration
+        startingTop: '4%', // Starting top style attribute
+        endingTop: '10%', // Ending top style attribute
+        ready: function (modal, trigger) { // Callback for Modal open. Modal and trigger parameters available.
+        },
+        complete: function () { } // Callback for Modal close
     }
-  );
-      
+    );
+    $(document).ready(function () {
+        $('.collapsible').collapsible();
+    });
+
+
     // Création du boutton scroll
     jQuery(window).scroll(function () {
         var duration = 500;

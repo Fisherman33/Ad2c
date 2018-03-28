@@ -13,7 +13,7 @@ function initMap() {
       zoom: 18,
       center: ad2c
     });
-    console.log("ok");
+    // console.log("ok");
     var marker = new google.maps.Marker({
       position: ad2c,
       map: map

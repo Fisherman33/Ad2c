@@ -150,7 +150,25 @@ h1, h2 {
 }
 }
 
-
-
-
-
+   /* label focus color */
+   .input-field input[type=text]:focus + label {
+    color: rgb(10, 18, 65);
+  }
+     /* label focus color */
+     .input-field input[type=text]:active + label {
+      color: rgb(10, 18, 65);
+    }
+  .input-field label {
+    color: rgb(39, 41, 189);
+  }
+   /* icon prefix focus color */
+   .input-field .prefix.active {
+    color: rgb(26, 122, 26);
+  }
+   /* icon prefix focus color */
+   .input-field .active {
+    color: rgb(26, 122, 26);
+  }
+  .input-field label {
+    pointer-events: auto;
+  }
