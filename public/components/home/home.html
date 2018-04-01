@@ -17,37 +17,17 @@
                         <img height="100%" width="100%" src="../../data/banieres/graphisme.jpg">
                 </a>
         </div>
-        <!-- 
-        <div class="slider" >
-                <ul class="slides">
-                        <li class="img_slide">
-                                <img class="responsive-img" width="100%" src="./data/banieres/serigraphie.jpg">
-                        </li>
-                        <li>
-                                <img class="responsive-img" src="./data/banieres/graphisme.jpg">
-                        </li>
-                        <li>
-                                <img class="responsive-img"  src="./data/banieres/imprimerie.jpg">
-                        </li>
-                        <li>
-                                <img class="responsive-img"  src="./data/banieres/textile.jpg">
-                        </li>
-                </ul>
-                <section id="section03" class="demo">
-                        <a href="#section04"><span></span></a>
-                </section>
-        </div>-->
-
         <div class="row">
                 <div class="center-align col l8 col s12">
-                        <h2>Bienvenue sur le site AD2C</h2>
-                        <h5>Depuis 1998 nous nous efforçons de répondre au mieux à vos besoins et projets dans les domaines de
-                                la création graphique, de l’imprimerie et de la sérigraphie.</h5>
-                        <h5 class="hide-on-med-and-down">Une équipe à votre écoute, des conseils personnalisés, un matériel performant et une attention permanente
+                        <h5>Bienvenue sur le site</h5>
+                        <h4>AD2C</h4>
+                        <p class="text_respon">Depuis 1998 nous nous efforçons de répondre au mieux à vos besoins et projets dans les domaines de
+                                la création graphique, de l’imprimerie et de la sérigraphie.</p>
+                        <p class="text_respon" class="hide-on-med-and-down">Une équipe à votre écoute, des conseils personnalisés, un matériel performant et une attention permanente
                                 des tendances et nouveautés du marché restant mes principaux atouts pour une collaboration
                                 réussie.
-                        </h5>
-                        <h5 class="">Nous vous souhaitons une bonne navigation sur notre site où vous trouverez l’ensemble de nos prestations.</h5>
+                        </p>
+                        <p class="text_respon" class="">Nous vous souhaitons une bonne navigation sur notre site où vous trouverez l’ensemble de nos prestations.</p>
                         <!-- Modal Trigger -->
                         <button data-target="modal1" class="btn modal-trigger grey">Demande devis en ligne</button>
                         <div class="col l12 footer-contact">
@@ -61,12 +41,6 @@
                                 <iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2FAD2C-750244175031582%2F&width=228&layout=button_count&action=recommend&size=large&show_faces=false&share=true&height=46&appId"
                                         width="228" height="46" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
                                         allowTransparency="true"></iframe>
-                                <!-- <a href="https://facebook.com" class="icon-button facebook">
-                                        <i class="icon-facebook"></i>
-                                        <span></span>
-                                </a> -->
-                                <!-- <a class="waves-effect waves-light btn-floating btn-large social facebook">
-                                        <i class="fa fa-facebook"></i> Sign in with facebook</a> -->
                         </div>
                         <!-- Modal Structure -->
                         <div id="modal1" class="modal modal-fixed-footer">
@@ -74,7 +48,6 @@
                                         <div class="row " id="formulaire">
                                                 <form action="#" class="col s12 col l12 black-text">
                                                         <h4 class="black-text center">Demande devis en ligne</h4>
-                                                        <p class="black-text center">Express</p>
                                                         <div class="row">
                                                                 <div class="input-field col l12 col s12">
                                                                         <i class="material-icons prefix">group</i>
@@ -108,14 +81,14 @@
                                                         </div>
                                                         <div class="row center">
 
-                                                                <input type="checkbox" id="Contact" />
-                                                                <label for="Contact">
+                                                                <input type="checkbox" id="contactCheck" />
+                                                                <label for="contactCheck">
                                                                         <h4 class="black-text">Demande de contact</h4>
                                                                 </label>
 
                                                         </div>
                                                         <div class="row">
-                                                                <div class="col l12">
+                                                                <div class="col l6">
 
                                                                         <input class="white" type="checkbox" ng-model="imprime" id="impri" />
 
@@ -123,46 +96,37 @@
                                                                                 <h4 class="black-text">Imprimerie</h4>
                                                                         </label>
 
-
-
-
                                                                         <div ng-show="imprime" class=" white">
-
                                                                                 <div class="row">
-
-                                                                                        <div class="input-field col s12 col l6">
-                                                                                                <input id="adress" type="text" class="validate">
-                                                                                                <label for="adress">Type de produit</label>
+                                                                                        <div class="input-field col s12 ">
+                                                                                                <input id="typeP" ng-model="inputVal" type="text" ng-init="inputVal" class="validate">
+                                                                                                <label for="typeP">Type de produit</label>
                                                                                         </div>
-                                                                                        <div class="input-field col s12 col l6 black-text">
-                                                                                                <input id="format" ng-model="format" name="format" type="text" class="validate">
+                                                                                        <div class="input-field col s12  black-text">
+                                                                                                <input id="qualite" type="text" class="validate">
+                                                                                                <label for="qualite">Qualité</label>
+                                                                                        </div>
+                                                                                        <div class="input-field col s12  black-text">
+                                                                                                <input id="format" type="text" class="validate">
                                                                                                 <label for="format">Format</label>
                                                                                         </div>
                                                                                 </div>
 
                                                                                 <div class="row black-text">
-                                                                                        <div class="input-field col s12 col l3">
-                                                                                                <input id="amount" ng-click="amounted = !amounted" ng-model="amounted" type="number" class="validate">
+                                                                                        <div class="input-field col s12 ">
+                                                                                                <input id="amount"  type="number" class="validate">
                                                                                                 <label for="amount" data-error="wrong">Quantité</label>
                                                                                         </div>
-                                                                                        <div class="switch col s12 col l6">
+                                                                                        <div class="switch col s12">
                                                                                                 <label>
                                                                                                         <span>Recto</span>
-                                                                                                        <input id="my-switch1" ng-click="isSwitchedOn1 = !isSwitchedOn1" ng-checked="isSwitchedOn1" type="checkbox">
+                                                                                                        <input id="RecVer" ng-click="isSwitchedOn1 = !isSwitchedOn1" ng-checked="isSwitchedOn1" type="checkbox">
                                                                                                         <span class="lever"></span>
                                                                                                         Recto/Verso
                                                                                                 </label>
                                                                                         </div>
-                                                                                        <button class="btn waves-effect right" type="submit" value="Submit" ng-click="format()">Submit</button>
-                                                                                        <div class="switch">
-                                                                                                <label>
-                                                                                                        Off
-                                                                                                        <input id="my-switch" ng-click="isSwitchedOn = !isSwitchedOn" ng-checked="isSwitchedOn" type="checkbox">
-                                                                                                        <span class="lever"></span>
-                                                                                                        On
-                                                                                                </label>
-                                                                                        </div>
-                                                                                        <div class="input-field col s10 col l3">
+
+                                                                                        <div class="input-field col s12 ">
                                                                                                 <input id="pages" type="number" class="validate">
                                                                                                 <label for="pages" data-error="wrong">Nombre de pages</label>
                                                                                         </div>
@@ -170,17 +134,17 @@
                                                                                 </div>
                                                                                 <div class="row">
                                                                                         <!-- Switch -->
-                                                                                        <div class="switch mySwitch black-text col s12 col l6">
+                                                                                        <div class="switch mySwitch black-text col s12">
                                                                                                 <label>
                                                                                                         <h6 class="black-text">Fichier fourni :
                                                                                                         </h6>
                                                                                                         <span>Non</span>
-                                                                                                        <input type="checkbox">
+                                                                                                        <input id="fileF" type="checkbox">
                                                                                                         <span class="lever"></span>
                                                                                                         <span>Oui</span>
                                                                                                 </label>
                                                                                         </div>
-                                                                                        <div class="input-field col s12 col l6">
+                                                                                        <div class="input-field col s12">
                                                                                                 <input id="finition" type="text" class="validate">
                                                                                                 <label for="finition">Finition</label>
                                                                                         </div>
@@ -194,39 +158,69 @@
 
                                                                         </div>
                                                                 </div>
-                                                                <div class="col l12">
-
-
+                                                                <div class="col l6">
                                                                         <input class=" white" type="checkbox" ng-model="serig" id="seri" />
 
                                                                         <label for="seri">
                                                                                 <h4 class="black-text">Sérigraphie</h4>
                                                                         </label>
 
-
-
-
                                                                         <div ng-show="serig" class=" white">
                                                                                 <span>
-                                                                                        <div class="row">
-                                                                                                <p>
-                                                                                                        <input type="checkbox" id="Conta" />
-                                                                                                        <label for="Conta">Demande de contact
+                                                                                        <div class="row center">
+                                                                                                <p class="col l6 s12">
+                                                                                                        <input type="checkbox" id="panCheck" />
+                                                                                                        <label for="panCheck">Panneaux
                                                                                                         </label>
                                                                                                 </p>
-                                                                                                <p>
-                                                                                                        <input type="checkbox" id="Cont" />
-                                                                                                        <label for="Cont">Demande de contact
+                                                                                                <p class="col l6 s12">
+                                                                                                        <input type="checkbox" id="enseignesCheck" />
+                                                                                                        <label for="enseignesCheck">Enseignes
                                                                                                         </label>
                                                                                                 </p>
-                                                                                                <p>
-                                                                                                        <input type="checkbox" id="Con" />
-                                                                                                        <label for="Con">Demande de contact
+                                                                                                <p class="col l6 s12">
+                                                                                                        <input type="checkbox" id="autocolCheck" />
+                                                                                                        <label for="autocolCheck">Autocollants
                                                                                                         </label>
                                                                                                 </p>
-                                                                                                <p>
-                                                                                                        <input type="checkbox" id="Co" />
-                                                                                                        <label for="Co">Demande de contact
+                                                                                                <p class="col l6 s12">
+                                                                                                        <input type="checkbox" id="textilesCheck" />
+                                                                                                        <label for="textilesCheck">Textiles
+                                                                                                        </label>
+                                                                                                </p>
+                                                                                                <p class="col l6 s12">
+                                                                                                        <input type="checkbox" id="standsCheck" />
+                                                                                                        <label for="standsCheck">Stands
+                                                                                                        </label>
+                                                                                                </p>
+                                                                                                <p class="col l6 s12">
+                                                                                                        <input type="checkbox" id="objCheck" />
+                                                                                                        <label for="objCheck">Objets pub
+                                                                                                        </label>
+                                                                                                </p>
+                                                                                                <p class="col l6 s12">
+                                                                                                        <input type="checkbox" id="bacheCheck" />
+                                                                                                        <label for="bacheCheck">Bâches
+                                                                                                        </label>
+                                                                                                </p>
+                                                                                                <p class="col l6 s12">
+                                                                                                        <input type="checkbox" id="decovCheck" />
+                                                                                                        <label for="decovCheck">Déco véhicule
+                                                                                                        </label>
+                                                                                                </p>
+                                                                                                <p class="col l6 s12">
+                                                                                                        <input type="checkbox" id="tamponsCheck" />
+                                                                                                        <label for="tamponsCheck">Tampons
+                                                                                                        </label>
+                                                                                                </p>
+                                                                                                <p class="col l6 s12">
+                                                                                                        <input type="checkbox" id="graphCheck" />
+                                                                                                        <label for="graphCheck">Graphisme
+                                                                                                        </label>
+                                                                                                </p>
+                                                                                                <p class="col l6 s12">
+                                                                                                        <input type="checkbox" id="autrecheck" />
+                                                                                                        <label for="autrecheck">Autres
                                                                                                         </label>
                                                                                                 </p>
                                                                                         </div>
@@ -234,77 +228,14 @@
                                                                         </div>
                                                                 </div>
                                                         </div>
-                                                        <!-- <div class="row">
-                                                                <h4 class="black-text">Imprimerie</h4>
-                                                                <div class="input-field col s6">
-                                                                        <input id="adress" type="text" class="validate">
-                                                                        <label for="adress">Type de produit</label>
-                                                                </div>
-                                                                <div class="input-field col s6">
-                                                                        <input id="format" type="text" class="validate">
-                                                                        <label for="format">Format</label>
-                                                                </div>
-                                                        </div>
-
-                                                        <div class="row">
-                                                                <div class="input-field col s3">
-                                                                        <input id="quantite" type="number" class="validate">
-                                                                        <label for="quantite" data-error="wrong">Quantité</label>
-                                                                </div>
-                                                                <div class="switch col s6">
-                                                                        <label>
-                                                                                <span>Recto</span>
-                                                                                <input type="checkbox">
-                                                                                <span class="lever"></span>
-                                                                                Recto/Verso
-                                                                        </label>
-                                                                </div>
-                                                                <div class="input-field col s3">
-                                                                        <input id="pages" type="number" class="validate">
-                                                                        <label for="pages" data-error="wrong">Nombre de pages</label>
-                                                                </div>
-
-                                                        </div>
-                                                        <div class="row">
-                                                                
-                                                                <div class="switch black-text col s6">
-                                                                        <label>
-                                                                                <h5 class="black-text">Fichier fourni :</h5>
-                                                                                <span>Non</span>
-                                                                                <input type="checkbox">
-                                                                                <span class="lever"></span>
-                                                                                <span>Oui</span>
-                                                                        </label>
-                                                                </div>
-                                                                <div class="input-field col s6">
-                                                                        <input id="finition" type="text" class="validate">
-                                                                        <label for="finition">Finition</label>
-                                                                </div>
-                                                        </div>
-                                                        <div class="row">
-                                                                <div class="input-field col s12">
-                                                                        <input id="remarque" type="text" class="validate">
-                                                                        <label for="remarque">Remarques</label>
-                                                                </div>
-                                                        </div> -->
-                                                        <!-- <div class="row">
-                                                                <div class="col s12">
-                                                                        This is an inline input field:
-                                                                        <div class="input-field inline">
-                                                                                <input id="email" type="email" class="validate">
-                                                                                <label for="email" data-error="wrong" data-success="right">Email</label>
-                                                                        </div>
-                                                                </div>
-                                                        </div> -->
 
 
-                                                        <button class="modal-action modal-close">Valider</button>
                                                 </form>
                                         </div>
                                 </div>
-                                <!-- <div class="modal-footer">
-                                        <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Agree</a>
-                                </div> -->
+                                <div class="modal-footer center">
+                                        <button ng-click="getValue()" class="modal-action modal-close waves-effect waves-green btn-flat center col l12">Valider</button>
+                                </div>
                         </div>
                 </div>
                 <div id="section04" class="center-align col l4 col s12">

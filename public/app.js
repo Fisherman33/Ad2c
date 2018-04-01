@@ -16,11 +16,14 @@ angular.module('ad2c', [
    'ngResource',
     // Here list your dependencies
 ])
-
+.run(['$anchorScroll', function($anchorScroll) {
+    $anchorScroll.yOffset = 50;   // always scroll by 50 extra pixels
+  }])
 .config(config)
     .run(run)
 
 function Config($stateProvider, $urlRouterProvider) {
+    
     const states = [{
         name: 'home',
         url: '/',

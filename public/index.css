@@ -44,7 +44,7 @@ h1, h2, h3, h4, ul {
 		color: white;
 	}
 .text_respon {
-     font-size: 16px;
+     font-size: 17px;
 }
 /*custom nav*/
 nav ul a {
@@ -59,7 +59,9 @@ nav .button-collapse i {
      of the button to still show through. */
       background-color: rgb(231, 0, 124);
     }
-        
+#modal1 {
+		z-index: 9999 !important;
+	  }   
 @media (max-width: 550px) { 
 		html { 
 			margin: 2% 2% 2% 2%;

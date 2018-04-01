@@ -13,6 +13,17 @@ nav {
   height: 42px;
 }
 
+.waves-effect.waves-brown .waves-ripple {
+  /* The alpha value allows the text and background color
+  of the button to still show through. */
+   background-color: rgba(231, 0, 124, 0.65);
+ }
+.waves-effect.waves-blue .waves-ripple {
+  /* The alpha value allows the text and background color
+  of the button to still show through. */
+   background-color: rgba(74, 129, 234, 0.65);
+ }
+
 .imprim, .graph,.text,.sig,.contac, .accueil {
 	position: relative;
 	font-size: 18px;
@@ -24,7 +35,12 @@ nav {
 	text-align: center;
   height: 50px;
 }
-
+.accueil_3 {
+  position: relative;
+	font-size: 16px;
+	text-align: center;
+  height: 80px;
+}
 .menu {
   line-height: 35px;
 }

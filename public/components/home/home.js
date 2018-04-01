@@ -9,32 +9,59 @@ angular.module('ad2c')
 
 function Home($scope) {
     // Controller
-    $scope.getSwitchValue = function () {
+
+    // $scope.getSwitchValue = function () {
+    //     // alert(angular.element('#my-switch').prop('checked'));
+    //     console.log(angular.element('#my-switch').prop('checked'));
+    //     console.log(angular.element('#my-switch1').prop('checked'));
+    //     console.log(angular.element('#amounted').val());
+    // };
+
+    $scope.getValue = function () {
         // alert(angular.element('#my-switch').prop('checked'));
-        console.log(angular.element('#my-switch').prop('checked'));
-        console.log(angular.element('#my-switch1').prop('checked'));
-        console.log(angular.element('#amounted').prop('number'));
+        alert('Site en maintenance');
+        // console.log(angular.element('input').val());
+        console.log(angular.element('#first_name').val());
+        console.log(angular.element('#adress').val());
+        console.log(angular.element('#last_name').val());
+        console.log(angular.element('#contact_name').val());
+        console.log(angular.element('#email').val());
+        console.log(angular.element('#typeP').val());
+        console.log(angular.element('#qualite').val());
+        console.log(angular.element('#format').val());
+        console.log(angular.element('#amount').val());
+        console.log(angular.element('#pages').val());
+        console.log(angular.element('#finition').val());
+        console.log(angular.element('#remarque').val());
+
+        console.log(angular.element('#contactCheck').prop('checked'));
+        console.log(angular.element('#seri').prop('checked'));
+        console.log(angular.element('#impri').prop('checked'));
+        console.log(angular.element('#fileF').prop('checked'));
+        console.log(angular.element('#RecVer').prop('checked'));
+        console.log(angular.element('#panCheck').prop('checked'));
+        console.log(angular.element('#enseignesCheck').prop('checked'));
+        console.log(angular.element('#autocolCheck').prop('checked'));
+        console.log(angular.element('#textilesCheck').prop('checked'));
+        console.log(angular.element('#standsCheck').prop('checked'));
+        console.log(angular.element('#objCheck').prop('checked'));
+        console.log(angular.element('#bacheCheck').prop('checked'));
+        console.log(angular.element('#decovCheck').prop('checked'));
+        console.log(angular.element('#tamponsCheck').prop('checked'));
+        console.log(angular.element('#graphCheck').prop('checked'));
+        console.log(angular.element('#autrecheck').prop('checked'));
     };
-    document.getElementsByName("format");
-    // $scope.format = function () {
-      
+    // console.log($scope.amounted);
+    // console.log(angular.element('inputVal').val())
+    // // } ;
+    // console.log($scope.inputVal);
 
-
-    // } ;
-    
-    // $('.carousel').carousel({
-    //     fullWidth: true,
-    //     padding: 0,
-    //     shift: 0,
-    //     dist: 0,
-    //     indicators: true,
-    //     noWrap: true,
+    // $scope.$watch('inputVal', function (val) {
+    //     if (val) {
+    //         console.log(val);
+    //     }
     // });
-    //  $('.slider').slider({
-    //      height: 420,
-    //      interval: 3000,
-    //      transition: 700,
-    //  });
+
     $('.carousel.carousel-slider').carousel({
         fullWidth: true,
         indicators: true,
@@ -51,9 +78,9 @@ function Home($scope) {
         complete: function () { } // Callback for Modal close
     }
     );
-    $(document).ready(function () {
-        $('.collapsible').collapsible();
-    });
+    // $(document).ready(function () {
+    //     $('.collapsible').collapsible();
+    // });
 
 
     // Création du boutton scroll
