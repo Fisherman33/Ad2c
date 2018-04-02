@@ -1,4 +1,4 @@
-dev:
+server_name:
     scheme: ftp
     host: ftp.ad2c.fr
     port: 21
