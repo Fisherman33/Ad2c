@@ -19,7 +19,7 @@ function Home($scope) {
 
     $scope.getValue = function () {
         // alert(angular.element('#my-switch').prop('checked'));
-        alert('Site en maintenance');
+  
         // console.log(angular.element('input').val());
         console.log(angular.element('#first_name').val());
         console.log(angular.element('#adress').val());
@@ -73,7 +73,8 @@ function Home($scope) {
         outDuration: 200, // Transition out duration
         startingTop: '4%', // Starting top style attribute
         endingTop: '10%', // Ending top style attribute
-        ready: function (modal, trigger) { // Callback for Modal open. Modal and trigger parameters available.
+        ready: function (modal, trigger) { 
+            alert('Site en maintenance l envoi de devis est impossible');// Callback for Modal open. Modal and trigger parameters available.
         },
         complete: function () { } // Callback for Modal close
     }

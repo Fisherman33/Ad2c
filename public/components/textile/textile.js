@@ -19,7 +19,9 @@ function Textile() {
         endingTop: '10%', // Ending top style attribute
         ready: function (modal, trigger) { // Callback for Modal open. Modal and trigger parameters available.
         },
-        complete: function () { } // Callback for Modal close
+        complete: function () { 
+            alert('Site en maintenance l envoi de devis est impossible');
+        } // Callback for Modal close
     }
     );
 }
