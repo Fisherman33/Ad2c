@@ -11,7 +11,7 @@ app.use(function(req, res, next) {
 });
 app.use(bodyParser.json());
 
-app.use(express.static('public')); // Distributing public folder
+app.use(express.static('./')); // Distributing public folder
 
 // ~~~~~~~~~~~~~ ROUTING ~~~~~~~~~~~~~~~
 

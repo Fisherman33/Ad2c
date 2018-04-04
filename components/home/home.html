@@ -24,20 +24,20 @@
                         <p class="text_respon">Depuis 1998 nous nous efforçons de répondre au mieux à vos besoins et projets dans les domaines de
                                 la création graphique, de l’imprimerie et de la sérigraphie.</p>
                         <p class="text_respon" class="hide-on-med-and-down">Une équipe à votre écoute, des conseils personnalisés, un matériel performant et une attention permanente
-                                des tendances et nouveautés du marché restant mes principaux atouts pour une collaboration
+                                des tendances et nouveautés du marché restant nos principaux atouts pour une collaboration
                                 réussie.
                         </p>
                         <p class="text_respon" class="">Nous vous souhaitons une bonne navigation sur notre site où vous trouverez l’ensemble de nos prestations.</p>
                         <!-- Modal Trigger -->
-                        <button data-target="modal1" class="btn modal-trigger grey">Demande devis en ligne</button>
-                        <div class="col l12 footer-contact">
+                        <button data-target="modal1" class="btn modal-trigger grey push-l4 col l4 push-s1 s10">Demande devis en ligne</button>
+                        <div class="col l12 s12 footer-contact">
                                 <p class="grey-text text-lighten-4">
                                         <i class="material-icons loc">
                                                 <a href="#!/contact"></a> location_on</i> 5, route de Landiras 33210 TOULENNE</p>
                                 <p>
-                                        <i class="material-icons phone">phone</i> 05 56 62 28 24
+                                        <i class="material-icons phone">phone</i> 05 56 62 28 24</p>
 
-                                        <i class="material-icons email">email</i> contact@ad2c.fr</p>
+                                       <p> <i class="material-icons email">email</i> contact@ad2c.fr</p>
                                 <iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2FAD2C-750244175031582%2F&width=228&layout=button_count&action=recommend&size=large&show_faces=false&share=true&height=46&appId"
                                         width="228" height="46" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
                                         allowTransparency="true"></iframe>
@@ -52,28 +52,28 @@
                                                                 <div class="input-field col l12 col s12">
                                                                         <i class="material-icons prefix">group</i>
                                                                         <input id="first_name" type="text" class="validate">
-                                                                        <label for="first_name">Nom de la société</label>
+                                                                        <label classe="labelForm" for="first_name">Nom de la société</label>
                                                                 </div>
                                                                 <div class="input-field col s12 col l6">
                                                                         <i class="material-icons prefix">location_on</i>
                                                                         <input id="adress" type="text" class="validate">
-                                                                        <label for="adress">Adresse</label>
+                                                                        <label class="labelForm" for="adress">Adresse</label>
                                                                 </div>
                                                                 <div class="input-field col s12 col l6">
                                                                         <i class="material-icons prefix">phone_circle</i>
                                                                         <input id="last_name" type="number" class="validate">
-                                                                        <label for="last_name" data-error="wrong">Tél</label>
+                                                                        <label class="labelForm" for="last_name" data-error="wrong">Tél</label>
                                                                 </div>
                                                                 <div class="input-field col s12 col l6">
                                                                         <i class="material-icons prefix">email</i>
                                                                         <input id="email" type="email" class="validate">
-                                                                        <label for="email">Email</label>
+                                                                        <label class="labelForm" for="email">Email</label>
                                                                 </div>
 
                                                                 <div class="input-field col s12 col l6">
                                                                         <i class="material-icons prefix">account_circle</i>
                                                                         <input id="contact_name" type="text" class="validate">
-                                                                        <label for="contact_name">Nom du contact</label>
+                                                                        <label class="labelForm" for="contact_name">Nom du contact</label>
                                                                 </div>
                                                         </div>
                                                         <div class="row">
@@ -82,7 +82,7 @@
                                                         <div class="row center">
 
                                                                 <input type="checkbox" id="contactCheck" />
-                                                                <label for="contactCheck">
+                                                                <label class="labelForm" for="contactCheck">
                                                                         <h4 class="black-text">Demande de contact</h4>
                                                                 </label>
 
@@ -92,7 +92,7 @@
 
                                                                         <input class="white" type="checkbox" ng-model="imprime" id="impri" />
 
-                                                                        <label for="impri">
+                                                                        <label class="labelForm" for="impri">
                                                                                 <h4 class="black-text">Imprimerie</h4>
                                                                         </label>
 
@@ -100,22 +100,22 @@
                                                                                 <div class="row">
                                                                                         <div class="input-field col s12 ">
                                                                                                 <input id="typeP" ng-model="inputVal" type="text" ng-init="inputVal" class="validate">
-                                                                                                <label for="typeP">Type de produit</label>
+                                                                                                <label class="labelForm" for="typeP">Type de produit</label>
                                                                                         </div>
                                                                                         <div class="input-field col s12  black-text">
                                                                                                 <input id="qualite" type="text" class="validate">
-                                                                                                <label for="qualite">Qualité</label>
+                                                                                                <label class="labelForm" for="qualite">Qualité</label>
                                                                                         </div>
                                                                                         <div class="input-field col s12  black-text">
-                                                                                                <input id="format" type="text" class="validate">
-                                                                                                <label for="format">Format</label>
+                                                                                                <input id="format" type="number" class="validate">
+                                                                                                <label class="labelForm" for="format">Format</label>
                                                                                         </div>
                                                                                 </div>
 
                                                                                 <div class="row black-text">
                                                                                         <div class="input-field col s12 ">
                                                                                                 <input id="amount" type="number" class="validate">
-                                                                                                <label for="amount" data-error="wrong">Quantité</label>
+                                                                                                <label class="labelForm" for="amount" data-error="wrong">Quantité</label>
                                                                                         </div>
                                                                                         <div class="switch col s12">
                                                                                                 <label>
@@ -128,7 +128,7 @@
 
                                                                                         <div class="input-field col s12 ">
                                                                                                 <input id="pages" type="number" class="validate">
-                                                                                                <label for="pages" data-error="wrong">Nombre de pages</label>
+                                                                                                <label class="labelForm" for="pages" data-error="wrong">Nombre de pages</label>
                                                                                         </div>
 
                                                                                 </div>
@@ -146,13 +146,13 @@
                                                                                         </div>
                                                                                         <div class="input-field col s12">
                                                                                                 <input id="finition" type="text" class="validate">
-                                                                                                <label for="finition">Finition</label>
+                                                                                                <label class="labelForm" for="finition">Finition</label>
                                                                                         </div>
                                                                                 </div>
                                                                                 <div class="row">
                                                                                         <div class="input-field col s12">
                                                                                                 <input id="remarque" type="text" class="validate">
-                                                                                                <label for="remarque">Remarques</label>
+                                                                                                <label class="labelForm" for="remarque">Remarques</label>
                                                                                         </div>
                                                                                 </div>
 
@@ -161,7 +161,7 @@
                                                                 <div class="col l6">
                                                                         <input class=" white" type="checkbox" ng-model="serig" id="seri" />
 
-                                                                        <label for="seri">
+                                                                        <label class="labelForm" for="seri">
                                                                                 <h4 class="black-text">Sérigraphie</h4>
                                                                         </label>
 
@@ -170,57 +170,57 @@
                                                                                         <div class="row center">
                                                                                                 <p class="col l6 s12">
                                                                                                         <input type="checkbox" id="panCheck" />
-                                                                                                        <label for="panCheck">Panneaux
+                                                                                                        <label class="labelForm" for="panCheck">Panneaux
                                                                                                         </label>
                                                                                                 </p>
                                                                                                 <p class="col l6 s12">
                                                                                                         <input type="checkbox" id="enseignesCheck" />
-                                                                                                        <label for="enseignesCheck">Enseignes
+                                                                                                        <label class="labelForm" for="enseignesCheck">Enseignes
                                                                                                         </label>
                                                                                                 </p>
                                                                                                 <p class="col l6 s12">
                                                                                                         <input type="checkbox" id="autocolCheck" />
-                                                                                                        <label for="autocolCheck">Autocollants
+                                                                                                        <label class="labelForm" for="autocolCheck">Autocollants
                                                                                                         </label>
                                                                                                 </p>
                                                                                                 <p class="col l6 s12">
                                                                                                         <input type="checkbox" id="textilesCheck" />
-                                                                                                        <label for="textilesCheck">Textiles
+                                                                                                        <label class="labelForm" for="textilesCheck">Textiles
                                                                                                         </label>
                                                                                                 </p>
                                                                                                 <p class="col l6 s12">
                                                                                                         <input type="checkbox" id="standsCheck" />
-                                                                                                        <label for="standsCheck">Stands
+                                                                                                        <label class="labelForm" for="standsCheck">Stands
                                                                                                         </label>
                                                                                                 </p>
                                                                                                 <p class="col l6 s12">
                                                                                                         <input type="checkbox" id="objCheck" />
-                                                                                                        <label for="objCheck">Objets pub
+                                                                                                        <label class="labelForm" for="objCheck">Objets pub
                                                                                                         </label>
                                                                                                 </p>
                                                                                                 <p class="col l6 s12">
                                                                                                         <input type="checkbox" id="bacheCheck" />
-                                                                                                        <label for="bacheCheck">Bâches
+                                                                                                        <label class="labelForm" for="bacheCheck">Bâches
                                                                                                         </label>
                                                                                                 </p>
                                                                                                 <p class="col l6 s12">
                                                                                                         <input type="checkbox" id="decovCheck" />
-                                                                                                        <label for="decovCheck">Déco véhicule
+                                                                                                        <label class="labelForm" for="decovCheck">Déco véhicule
                                                                                                         </label>
                                                                                                 </p>
                                                                                                 <p class="col l6 s12">
                                                                                                         <input type="checkbox" id="tamponsCheck" />
-                                                                                                        <label for="tamponsCheck">Tampons
+                                                                                                        <label class="labelForm" for="tamponsCheck">Tampons
                                                                                                         </label>
                                                                                                 </p>
                                                                                                 <p class="col l6 s12">
                                                                                                         <input type="checkbox" id="graphCheck" />
-                                                                                                        <label for="graphCheck">Graphisme
+                                                                                                        <label class="labelForm" for="graphCheck">Graphisme
                                                                                                         </label>
                                                                                                 </p>
                                                                                                 <p class="col l6 s12">
                                                                                                         <input type="checkbox" id="autrecheck" />
-                                                                                                        <label for="autrecheck">Autres
+                                                                                                        <label class="labelForm" for="autrecheck">Autres
                                                                                                         </label>
                                                                                                 </p>
                                                                                         </div>
