@@ -15,7 +15,7 @@ app.use(express.static('./')); // Distributing public folder
 
 // ~~~~~~~~~~~~~ ROUTING ~~~~~~~~~~~~~~~
 
-app.get('/myRoute/:myParam', function(req, res) {
+app.get('/admin', function(req, res) {
     console.log('GET Request at myRoute with Param : ', req.params.myParam);
 });
 

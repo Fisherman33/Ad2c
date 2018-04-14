@@ -1,0 +1,23 @@
+<div class="container">
+  <a href='/'><button type='submit' name='btn_login' class='col s12 btn btn-large waves-effect indigo'>Retour site</button></a>
+  <form>
+    <div class="form-group">
+        <label for="myFileField">Select a file: </label>
+        <input accept="image/*" name="file" type="file" demo-file-model="myFile"  class="form-control" id ="myFileField"/>
+    </div>
+    <button ng-click="uploadFile()" class = "btn btn-primary">Upload File</button>
+</form>
+<div id="modal-success" class="modal">
+        <div class="modal-content">
+                <h4>Modal Header</h4>
+                <p style="color: black; font-family: Biko;">Votre news a bien été sauvegardée !</p>
+        </div>
+</div>
+
+<div id="modal-error" class="modal">
+        <div class="modal-content">
+                <h4>Modal Header</h4>
+                <p style="color: black; font-family: Biko;">Une erreur est survenue, veuillez réessayer ultérieurement.</p>
+        </div>
+</div>
+</div>

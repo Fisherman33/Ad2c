@@ -7,61 +7,66 @@ angular.module('ad2c')
         controller: Home
     })
 
-function Home($scope) {
-    // Controller
-
-    // $scope.getSwitchValue = function () {
-    //     // alert(angular.element('#my-switch').prop('checked'));
-    //     console.log(angular.element('#my-switch').prop('checked'));
-    //     console.log(angular.element('#my-switch1').prop('checked'));
-    //     console.log(angular.element('#amounted').val());
-    // };
+function Home($scope, $http) {
 
     $scope.getValue = function () {
-        // alert(angular.element('#my-switch').prop('checked'));
-  
-        // console.log(angular.element('input').val());
-        console.log(angular.element('#first_name').val());
-        console.log(angular.element('#adress').val());
-        console.log(angular.element('#last_name').val());
-        console.log(angular.element('#contact_name').val());
-        console.log(angular.element('#email').val());
-        console.log(angular.element('#typeP').val());
-        console.log(angular.element('#qualite').val());
-        console.log(angular.element('#format').val());
-        console.log(angular.element('#amount').val());
-        console.log(angular.element('#pages').val());
-        console.log(angular.element('#finition').val());
-        console.log(angular.element('#remarque').val());
+        var form = {
+            company: $scope.company,
+            phone: $scope.phone,
+            email: $scope.email,
+            contactname: $scope.contact_name,
+            address: $scope.address,
+            askForContact: $scope.contactbox,
+            serigraphie: $scope.serig,
+            seriData: {
+                pan: $scope.panCheck,
+                enseinges: $scope.enseingesCheck,
+                autocol: $scope.autocolCheck,
+                textile: $scope.textilesCheck,
+                stands: $scope.standsCheck,
+                obj: $scope.objCheck,
+                bache: $scope.bacheCheck,
+                decovCheck: $scope.decovCheck,
+                tampons: $scope.tamponsCheck,
+                graph: $scope.graphCheck,
+                other: $scope.autrecheck
+            },
+            imprimerie: $scope.imprime,
+            imprimerieData: {
+                productType: $scope.productType,
+                quality: $scope.quality,
+                format: $scope.format,
+                amount: $scope.amount,
+                recto: $scope.recto,
+                pagesNumber: $scope.pagesNumber,
+                fileF: $scope.fileF,
+                finition: $scope.finition,
+                remarques: $scope.remarques
+            }
+        }
+    
+        $http({
+            url: 'http://localhost:3000/api.ad2c/quotations',
+            method: "POST",
+            data: JSON.stringify(form),
+            headers: {'Content-Type': 'application/json'}
+        }).then(function (data, status, headers, config) {
+            console.log(data)
+            $('#modal1').modal('close')
+            $('#modal-success').modal('open')
+            setTimeout(function(){
+                $('#modal-success').modal('close')
+            },2000)
+        }).catch(function(error) {
+            console.log('ERROR!!!! ', error)
+            $('#modal1').modal('close')
+            $('#modal-error').modal('open')
+            setTimeout(function(){
+                $('#modal-error').modal('close')
+            },2000)
+        })
 
-        console.log(angular.element('#contactCheck').prop('checked'));
-        console.log(angular.element('#seri').prop('checked'));
-        console.log(angular.element('#impri').prop('checked'));
-        console.log(angular.element('#fileF').prop('checked'));
-        console.log(angular.element('#RecVer').prop('checked'));
-        console.log(angular.element('#panCheck').prop('checked'));
-        console.log(angular.element('#enseignesCheck').prop('checked'));
-        console.log(angular.element('#autocolCheck').prop('checked'));
-        console.log(angular.element('#textilesCheck').prop('checked'));
-        console.log(angular.element('#standsCheck').prop('checked'));
-        console.log(angular.element('#objCheck').prop('checked'));
-        console.log(angular.element('#bacheCheck').prop('checked'));
-        console.log(angular.element('#decovCheck').prop('checked'));
-        console.log(angular.element('#tamponsCheck').prop('checked'));
-        console.log(angular.element('#graphCheck').prop('checked'));
-        console.log(angular.element('#autrecheck').prop('checked'));
     };
-    // console.log($scope.amounted);
-    // console.log(angular.element('inputVal').val())
-    // // } ;
-    // console.log($scope.inputVal);
-
-    // $scope.$watch('inputVal', function (val) {
-    //     if (val) {
-    //         console.log(val);
-    //     }
-    // });
-
     $('.carousel.carousel-slider').carousel({
         fullWidth: true,
         indicators: true,
@@ -69,20 +74,14 @@ function Home($scope) {
     $('.modal').modal({
         dismissible: true, // Modal can be dismissed by clicking outside of the modal
         opacity: .5, // Opacity of modal background
-        inDuration: 300, // Transition in duration
+        inDuration: 100, // Transition in duration
         outDuration: 200, // Transition out duration
         startingTop: '4%', // Starting top style attribute
         endingTop: '10%', // Ending top style attribute
-        ready: function (modal, trigger) { 
-            alert('Site en maintenance l envoi de devis est impossible');// Callback for Modal open. Modal and trigger parameters available.
-        },
+        ready: function (modal, trigger) {},
         complete: function () { } // Callback for Modal close
     }
     );
-    // $(document).ready(function () {
-    //     $('.collapsible').collapsible();
-    // });
-
 
     // Création du boutton scroll
     jQuery(window).scroll(function () {
@@ -96,6 +95,7 @@ function Home($scope) {
 
         }
     });
+
     //Click qui provoque le retour en haut animé scroll
     jQuery('.demo').click(function (event) {
         var duration = 1000;

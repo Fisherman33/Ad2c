@@ -25,39 +25,14 @@ angular.module('ad2c', [
 function Config($stateProvider, $urlRouterProvider) {
     
     const states = [{
-        name: 'home',
+        name: 'login',
         url: '/',
-        component: 'home'
+        component: 'login'
     },
     {
-        name: 'graphisme',
-        url: '/graphisme',
-        component: 'graphisme'
-    },
-    {
-        name: 'imprimerie',
-        url: '/imprimerie',
-        component: 'imprimerie'
-    },
-    {
-        name: 'signaletique',
-        url: '/signaletique',
-        component: 'signaletique'
-    },
-    {
-        name: 'textile',
-        url: '/textile',
-        component: 'textile'
-    },
-    {
-        name: 'contact',
-        url: '/contact',
-        component: 'contact'
-    },
-    {
-        name: 'connexion',
-        url: '/connexion',
-        component: 'connexion'
+        name: 'homeAdmin',
+        url: '/homeAdmin',
+        component: 'homeAdmin'
     }];
 
     states.forEach((state) => {
