@@ -15,7 +15,7 @@ function Login($scope, $http, $window, $location) {
         $http({
             url: 'http://localhost:3000/api.ad2c/authorize',
             method: "POST",
-            data: JSON.stringify({username: $scope.username, password: $scope.username}),
+            data: JSON.stringify({username: $scope.username, password: $scope.password}),
             headers: {'Content-Type': 'application/json'}
         }).then(function (data, status, headers, config) {
             $window.sessionStorage.token = data.data.token
